@@ -29,7 +29,9 @@ RUN apt-get update && apt-get install -y build-essential \
 
 WORKDIR /
 
-RUN pip install numpy matplotlib scikit-learn scipy imgaug tqdm xmljson
+RUN pip install numpy matplotlib   \ 
+	scikit-learn scipy imgaug   \
+	tqdm xmljson ipython jupyter \
 
 # OpenCV with contrib
 RUN wget https://github.com/Itseez/opencv/archive/3.3.1.zip -O opencv.zip \
