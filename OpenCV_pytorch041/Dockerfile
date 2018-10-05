@@ -32,7 +32,7 @@ WORKDIR /
 RUN pip install numpy matplotlib   \ 
 	scikit-learn scipy imgaug   \
 	tqdm xmljson ipython jupyter \
-
+        pandas
 # OpenCV with contrib
 RUN wget https://github.com/Itseez/opencv/archive/3.3.1.zip -O opencv.zip \
 	&& unzip opencv.zip \
